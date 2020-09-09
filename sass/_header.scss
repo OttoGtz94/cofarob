@@ -1,0 +1,56 @@
+header {
+    background: url('../img/fondoheader.jpg');
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center 0;
+    color: #FFFFFF;
+
+    h1,
+    h3 {
+        font-family: 'Pacifico', cursive;
+    }
+
+    .contenedor {
+        position: relative;
+        height: 700px;
+
+        .menu {
+            width: 100%;
+            text-align: right;
+            padding: 20px 0;
+
+            a {
+                text-decoration: none;
+                font-size: 20px;
+                margin: 40px 20px;
+                position: relative;
+                color: #FFFFFF;
+                font-weight: 300;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+        }
+
+        .texto {
+        	width: 100%;
+        	position: absolute;
+        	top: 25%;
+        	//margin-top: -72px;
+        	.nombre {
+        		font-size: 100px;
+        		opacity: 0.9;
+        	}
+        	h3 {
+        		font-size: 30px;
+        		margin-left: 15%;
+        		//margin-top: 15px;
+        	}
+        }
+    }
+
+
+}

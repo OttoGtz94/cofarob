@@ -1,0 +1,25 @@
+footer {
+	width: 100%;
+	background:rgba(0,0,0,1);
+	height: 100px;
+	padding: 30px 0;
+	.contenedor {
+		display: flex;
+		justify-content: center;
+		align-items: flex-center;
+		flex-wrap: wrap;
+		a{
+			color: #fff;
+			text-align: center;
+			font-size: 35px;
+			width: 80px;
+			//padding: 15px 0;
+			display: block;
+			margin: 0 20px;
+			border-radius: 5px;
+		}
+		.youtube:hover {background: #ff0000;}
+		.fb:hover {background: #3b5998;}
+		.instagram:hover {background: #833ab4;}
+	}
+}

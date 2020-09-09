@@ -1,0 +1,362 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif; }
+
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden; }
+
+header {
+  background: url("../img/fondoheader.jpg");
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center 0;
+  color: #FFFFFF; }
+  header h1,
+  header h3 {
+    font-family: 'Pacifico', cursive; }
+  header .contenedor {
+    position: relative;
+    height: 700px; }
+    header .contenedor .menu {
+      width: 100%;
+      text-align: right;
+      padding: 20px 0; }
+      header .contenedor .menu a {
+        text-decoration: none;
+        font-size: 20px;
+        margin: 40px 20px;
+        position: relative;
+        color: #FFFFFF;
+        font-weight: 300; }
+      header .contenedor .menu a:hover {
+        text-decoration: underline; }
+    header .contenedor .texto {
+      width: 100%;
+      position: absolute;
+      top: 25%; }
+      header .contenedor .texto .nombre {
+        font-size: 100px;
+        opacity: 0.9; }
+      header .contenedor .texto h3 {
+        font-size: 30px;
+        margin-left: 15%; }
+
+.menu-de, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-comer, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-tomar {
+  margin: 0 10px; }
+  .menu-de .de-, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-comer .de-, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-tomar .de- {
+    font-size: 20px; }
+  .menu-de .platillo, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-comer .platillo, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-tomar .platillo {
+    border-bottom: 3px dotted black;
+    margin: 15px 10px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 130px; }
+    .menu-de .platillo .precio, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-comer .platillo .precio, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-tomar .platillo .precio {
+      font-size: 19px;
+      font-weight: 600;
+      width: 10%; }
+    .menu-de .platillo .nombre-platillo, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-comer .platillo .nombre-platillo, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-tomar .platillo .nombre-platillo {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      width: 90%; }
+    .menu-de .platillo .descripcion-platillo, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-comer .platillo .descripcion-platillo, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-tomar .platillo .descripcion-platillo {
+      font-size: 16px;
+      width: 100%; }
+
+.main {
+  background: url("../img/textura-madera1600.jpg");
+  background-repeat: repeat; }
+  .main .acerca-de {
+    width: 100%;
+    margin: 0px auto; }
+    .main .acerca-de .contenedor {
+      overflow: visible;
+      position: relative; }
+      .main .acerca-de .contenedor .foto {
+        width: 80%;
+        position: absolute;
+        margin: 0px auto;
+        top: -50px;
+        z-index: 0;
+        -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35); }
+        .main .acerca-de .contenedor .foto img {
+          width: 100%;
+          vertical-align: top; }
+      .main .acerca-de .contenedor article {
+        background: #fff;
+        padding: 40px;
+        width: 30%;
+        position: relative;
+        float: right;
+        top: 30px;
+        /*Con Parallax*/
+        z-index: 1;
+        -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
+        opacity: 0.9; }
+        .main .acerca-de .contenedor article h3 {
+          text-align: center;
+          font-size: 40px;
+          font-weight: 300;
+          margin-bottom: 20px; }
+        .main .acerca-de .contenedor article p {
+          font-size: 15px; }
+  .main .menu {
+    padding-top: 550px; }
+    .main .menu .contenedor {
+      background: url("../img/bg-textura.png");
+      padding: 30px; }
+      .main .menu .contenedor h3 {
+        font-family: 'Satisfy', cursive;
+        font-size: 45px;
+        text-align: center;
+        margin-bottom: 20px;
+        color: rgba(60, 60, 60, 0.8); }
+      .main .menu .contenedor .contenedor-menu {
+        border: 2px solid rgba(60, 60, 60, 0.8);
+        padding: 5px; }
+        .main .menu .contenedor .contenedor-menu .contenedor-menu2 {
+          border: 1.5px solid rgba(60, 60, 60, 0.8);
+          padding: 15px;
+          display: flex; }
+  .main .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 50px auto;
+    align-items: flex-center;
+    background: black; }
+    .main .galeria .foto {
+      width: 25%;
+      margin: auto; }
+      .main .galeria .foto img {
+        width: 100%;
+        opacity: 0.3;
+        vertical-align: top; }
+      .main .galeria .foto img:hover {
+        opacity: 1; }
+  .main .ubicacion {
+    width: 100%;
+    padding: 20px; }
+    .main .ubicacion .contenedor {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%; }
+      .main .ubicacion .contenedor h3 {
+        width: 100%;
+        color: #2f2415;
+        font-size: 25px;
+        margin: 10px; }
+      .main .ubicacion .contenedor .direccion {
+        margin: 0 25px 15px 15px;
+        width: 50%;
+        color: #ebe4da; }
+        .main .ubicacion .contenedor .direccion .calle {
+          font-size: 17px;
+          margin: 10px 0; }
+        .main .ubicacion .contenedor .direccion .telefono {
+          font-size: 18px;
+          margin: 10px 0; }
+        .main .ubicacion .contenedor .direccion .correo {
+          font-size: 16px;
+          margin: 10px 0; }
+      .main .ubicacion .contenedor .horarios {
+        width: 40%; }
+        .main .ubicacion .contenedor .horarios h4 {
+          font-size: 20px;
+          margin: 10px;
+          color: #2f2415; }
+        .main .ubicacion .contenedor .horarios p {
+          text-align: center;
+          font-size: 18px;
+          color: #ebe4da; }
+  .main .mapa {
+    width: 100%; }
+    .main .mapa iframe {
+      width: 100%; }
+
+footer {
+  width: 100%;
+  background: black;
+  height: 100px;
+  padding: 30px 0; }
+  footer .contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: flex-center;
+    flex-wrap: wrap; }
+    footer .contenedor a {
+      color: #fff;
+      text-align: center;
+      font-size: 35px;
+      width: 80px;
+      display: block;
+      margin: 0 20px;
+      border-radius: 5px; }
+    footer .contenedor .youtube:hover {
+      background: #ff0000; }
+    footer .contenedor .fb:hover {
+      background: #3b5998; }
+    footer .contenedor .instagram:hover {
+      background: #833ab4; }
+
+@media screen and (max-width: 900px) {
+  .main .acerca-de .contenedor article {
+    padding: 20px; }
+    .main .acerca-de .contenedor article p {
+      font-size: 15px; } }
+@media screen and (max-width: 800px) {
+  .menu-de .de-, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-comer .de-, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-tomar .de- {
+    font-size: 25px; }
+  .menu-de .platillo, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-comer .platillo, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-tomar .platillo {
+    padding: 0; }
+    .menu-de .platillo .precio, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-comer .platillo .precio, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-tomar .platillo .precio {
+      width: 20%;
+      font-size: 18px; }
+    .menu-de .platillo .nombre-platillo, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-comer .platillo .nombre-platillo, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-tomar .platillo .nombre-platillo {
+      width: 80%;
+      font-size: 17px; }
+    .menu-de .platillo .descripcion-platillo, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-comer .platillo .descripcion-platillo, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-tomar .platillo .descripcion-platillo {
+      font-size: 13px; }
+
+  .main .acerca-de .contenedor article {
+    padding: 20px; }
+    .main .acerca-de .contenedor article h3 {
+      font-size: 20px; }
+    .main .acerca-de .contenedor article p {
+      font-size: 15px; }
+  .main .menu {
+    padding-top: 350px; }
+    .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-comer {
+      width: 100%; }
+      .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-comer .platillo {
+        width: 95%; }
+    .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-tomar {
+      width: 100%; } }
+@media screen and (max-width: 700px) {
+  .menu-de .de-, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-comer .de-, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-tomar .de- {
+    font-size: 25px; }
+  .menu-de .platillo, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-comer .platillo, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-tomar .platillo {
+    padding: 0; }
+    .menu-de .platillo .precio, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-comer .platillo .precio, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-tomar .platillo .precio {
+      width: 20%;
+      font-size: 16px; }
+    .menu-de .platillo .nombre-platillo, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-comer .platillo .nombre-platillo, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-tomar .platillo .nombre-platillo {
+      width: 80%;
+      font-size: 17px; }
+    .menu-de .platillo .descripcion-platillo, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-comer .platillo .descripcion-platillo, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-tomar .platillo .descripcion-platillo {
+      font-size: 13px; }
+
+  .main .acerca-de .contenedor .foto {
+    width: 100%; }
+  .main .acerca-de .contenedor article {
+    padding: 20px;
+    width: 100%;
+    top: 200px; }
+    .main .acerca-de .contenedor article p {
+      font-size: 15px; }
+  .main .menu {
+    padding-top: 400px; }
+  .main .galeria .foto {
+    width: 50%; } }
+@media screen and (max-width: 650px) {
+  .menu-de .de-, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-comer .de-, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-tomar .de- {
+    font-size: 25px; }
+  .menu-de .platillo, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-comer .platillo, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-tomar .platillo {
+    padding: 0; }
+    .menu-de .platillo .precio, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-comer .platillo .precio, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-tomar .platillo .precio {
+      width: 20%;
+      font-size: 13px; }
+    .menu-de .platillo .nombre-platillo, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-comer .platillo .nombre-platillo, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-tomar .platillo .nombre-platillo {
+      width: 80%;
+      font-size: 15px; }
+    .menu-de .platillo .descripcion-platillo, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-comer .platillo .descripcion-platillo, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-tomar .platillo .descripcion-platillo {
+      font-size: 12px; } }
+@media screen and (max-device-width: 600px) {
+  .menu-de .de-, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-comer .de-, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-tomar .de- {
+    font-size: 25px; }
+  .menu-de .platillo, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-comer .platillo, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-tomar .platillo {
+    padding: 0; }
+    .menu-de .platillo .precio, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-comer .platillo .precio, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-tomar .platillo .precio {
+      width: 20%;
+      font-size: 18px; }
+    .menu-de .platillo .nombre-platillo, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-comer .platillo .nombre-platillo, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-tomar .platillo .nombre-platillo {
+      width: 80%;
+      font-size: 17px; }
+    .menu-de .platillo .descripcion-platillo, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-comer .platillo .descripcion-platillo, .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-tomar .platillo .descripcion-platillo {
+      font-size: 15px; }
+
+  header .contenedor {
+    height: 720px; }
+    header .contenedor .menu {
+      text-align: center;
+      padding: 40px 0; }
+      header .contenedor .menu a {
+        font-size: 15px;
+        margin: 40px 10px; }
+    header .contenedor .texto .nombre {
+      font-size: 70px; }
+    header .contenedor .texto h3 {
+      font-size: 20px; }
+
+  .main .acerca-de .contenedor .foto {
+    width: 100%; }
+  .main .acerca-de .contenedor article {
+    width: 100%;
+    top: 130px;
+    padding: 20px; }
+    .main .acerca-de .contenedor article h3 {
+      font-size: 25px; }
+    .main .acerca-de .contenedor article p {
+      font-size: 15px; }
+  .main .menu {
+    padding-top: 400px; }
+    .main .menu .contenedor {
+      width: 100%;
+      padding: 10px; }
+      .main .menu .contenedor h3 {
+        font-size: 30px; }
+      .main .menu .contenedor .contenedor-menu .contenedor-menu2 {
+        display: block; }
+        .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-comer {
+          width: 100%; }
+          .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-comer .platillo {
+            width: 95%; }
+        .main .menu .contenedor .contenedor-menu .contenedor-menu2 .menu-de-tomar {
+          width: 100%; }
+  .main .galeria .foto {
+    width: 50%; }
+  .main .ubicacion .contenedor h3 {
+    font-size: 35px; }
+  .main .ubicacion .contenedor .direccion {
+    width: 100%; }
+    .main .ubicacion .contenedor .direccion .calle, .main .ubicacion .contenedor .direccion .telefono, .main .ubicacion .contenedor .direccion .correo {
+      font-size: 20px;
+      text-align: center; }
+  .main .ubicacion .contenedor .horarios {
+    width: 100%; }
+    .main .ubicacion .contenedor .horarios h4, .main .ubicacion .contenedor .horarios p {
+      font-size: 35px; }
+
+  footer {
+    height: auto; }
+    footer .contenedor {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-center; }
+      footer .contenedor a {
+        font-size: 50px;
+        margin: 0 10px;
+        width: 80px; } }
+
+/*# sourceMappingURL=estilos.css.map */

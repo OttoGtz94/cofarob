@@ -1,0 +1,209 @@
+.menu-de {
+	margin:0 10px;
+	.de- {
+	    font-size: 20px;
+	}
+    .platillo {
+        border-bottom: 3px dotted black;
+        margin: 15px 10px;
+        padding: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        height: 130px;
+		.precio {
+			font-size: 19px;
+			font-weight: 600;
+			width: 10%;
+			//text-align: left;
+		}
+        .nombre-platillo {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            width: 90%;
+        }
+
+        .descripcion-platillo {
+            font-size: 16px;
+            width: 100%;
+        }
+    }
+}
+
+.main {
+    background: url('../img/textura-madera1600.jpg');
+    background-repeat: repeat;
+
+    .acerca-de {
+        width: 100%;
+        margin: 0px auto;
+
+        .contenedor {
+            overflow: visible;
+            position: relative;
+
+            .foto {
+                width: 80%;
+                position: absolute;
+                //left: 0;
+                margin: 0px auto;
+                top: -50px;
+                z-index: 0;
+                -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
+                box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
+
+
+                img {
+                    //margin: 30px;
+                    width: 100%;
+                    vertical-align: top;
+                }
+            }
+
+            article {
+                background: #fff;
+                padding: 40px;
+                width: 30%;
+                position: relative;
+                float: right;
+                top: 30px;
+                //top: 120px;
+                /*Con Parallax*/
+                z-index: 1;
+                -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
+                box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
+                opacity: 0.9;
+
+                h3 {
+                    text-align: center;
+                    font-size: 40px;
+                    font-weight: 300;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    .menu {
+    	padding-top: 550px;
+        .contenedor {
+            background: url('../img/bg-textura.png');
+            padding: 30px;
+
+            h3 {
+                //font-family: $letraPacifico;
+                font-family: 'Satisfy', cursive;
+                font-size: 45px;
+                text-align: center;
+                margin-bottom: 20px;
+                color: rgba(60,60,60,0.8);
+            }
+
+            .contenedor-menu {
+                border: 2px solid rgba(60,60,60,0.8);;
+                padding: 5px;
+
+                .contenedor-menu2 {
+                    border: 1.5px solid rgba(60,60,60,0.8);;
+                    padding: 15px;
+                    display: flex;
+
+                    .menu-de-comer {
+                    	
+                        @extend .menu-de;
+                    }
+                    .menu-de-tomar {
+                    	
+                    	@extend .menu-de;
+                    }
+                }
+            }
+        }
+    }
+    .galeria {
+    	display: flex;
+    	flex-wrap: wrap; 
+    	width: 100%;
+    	margin: 50px auto;
+    	//align-content: flex-center;
+    	//justify-content: space-between;
+    	align-items: flex-center;
+    	//overflow: hidden; Este sera para cuando tenga que aparecer una sola imagen
+    	background: black;
+    	.foto {
+    		width:25%;
+    		//margin: 2px;
+    		margin: auto;
+    		img {
+    			width: 100%;
+    			opacity: 0.3;
+    			vertical-align: top;
+    		}
+    		img:hover {
+    			opacity: 1;
+    		}
+    	}
+    }
+    .ubicacion {
+    	width: 100%;
+    	//background: red;
+    	padding: 20px;
+    	//color: white;
+    	.contenedor {
+    		//background: white;
+    		display: flex;
+    		flex-wrap: wrap;
+    		width: 100%;
+    		h3 {
+    			width: 100%;
+    			//color: #1f180e;
+    			color: #2f2415;
+    			font-size: 25px;
+    			margin: 10px;
+    		}
+    		.direccion {
+    			margin: 0 25px 15px 15px;
+    			width: 50%;
+    			color: #ebe4da;
+
+    			.calle {
+    				font-size: 17px;
+    				margin: 10px 0;
+    			}
+    			.telefono {
+    				font-size: 18px;
+    				margin: 10px 0;
+    			}
+    			.correo {
+    				font-size: 16px;
+    				margin: 10px 0;
+    			}
+    		}
+    		.horarios {
+    			width: 40%;
+
+    			h4 {
+    				font-size: 20px;
+    				margin: 10px;
+    				color: #2f2415;
+    			}
+    			p {
+    				text-align: center;
+    				font-size: 18px;
+    				color: #ebe4da;
+    			}
+    		}
+    	}
+    }
+    .mapa {
+    	width: 100%;
+    	iframe {
+    		width: 100%;
+    	}
+    }
+}

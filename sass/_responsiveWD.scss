@@ -1,0 +1,309 @@
+@media screen and (max-width: 900px){ 
+    .main {
+        .acerca-de {
+            .contenedor {
+                article {
+                    padding: 20px;
+                    p {
+                        font-size: 15px;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px){ 
+    .menu-de {
+        .de- {
+            font-size: 25px;
+        }
+
+        .platillo {
+            padding: 0;
+
+            .precio {
+                width: 20%;
+                font-size: 18px;
+            }
+
+            .nombre-platillo {
+                width: 80%;
+                font-size: 17px;
+            }
+
+            .descripcion-platillo {
+                font-size: 13px;
+
+            }
+        }
+    }
+    .main {
+        .acerca-de {
+            .contenedor {
+                article {
+                    padding: 20px;
+                    h3 {
+                        font-size: 20px;
+                    }
+                    p {
+                        font-size: 15px;
+                    }
+
+                }
+            }
+        }
+        .menu {
+            padding-top: 350px;
+            .contenedor {
+
+                .contenedor-menu {
+                    .contenedor-menu2 {
+
+                        .menu-de-comer {
+                            width: 100%;
+
+                            .platillo {
+                                width: 95%;
+                            }
+                        }
+                        .menu-de-tomar {
+                            //margin-top: 100px;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 700px){
+    .menu-de {
+        .de- {
+            font-size: 25px;
+        }
+
+        .platillo {
+            padding: 0;
+
+            .precio {
+                width: 20%;
+                font-size: 16px;
+            }
+
+            .nombre-platillo {
+                width: 80%;
+                font-size: 17px;
+            }
+
+            .descripcion-platillo {
+                font-size: 13px;
+
+            }
+        }
+    }
+    .main {
+        .acerca-de {
+            .contenedor {
+                .foto {
+                    width: 100%;
+                }
+                article {
+                    padding: 20px;
+                    width: 100%;
+                    top: 200px;
+                    p {
+                        font-size: 15px;
+                    }
+
+                }
+            }
+        }
+        .menu {
+            padding-top: 400px;
+            .contenedor {
+                .contenedor-menu {
+                    .contenedor-menu2 {
+
+                    }
+                }
+            }
+        }
+        .galeria {
+            .foto {
+                width: 50%;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 650px){
+     .menu-de {
+        .de- {
+            font-size: 25px;
+        }
+
+        .platillo {
+            padding: 0;
+
+            .precio {
+                width: 20%;
+                font-size: 13px;
+            }
+
+            .nombre-platillo {
+                width: 80%;
+                font-size: 15px;
+            }
+
+            .descripcion-platillo {
+                font-size: 12px;
+
+            }
+        }
+    }
+}
+@media screen and (max-device-width: 600px) {
+    .menu-de {
+        .de- {
+            font-size: 25px;
+        }
+
+        .platillo {
+            padding: 0;
+
+            .precio {
+                width: 20%;
+                font-size: 18px;
+            }
+
+            .nombre-platillo {
+                width: 80%;
+                font-size: 17px;
+            }
+
+            .descripcion-platillo {
+                font-size: 15px;
+
+            }
+        }
+    }
+
+    header {
+        .contenedor {
+            height: 720px;
+            .menu {
+            	text-align: center;
+            	padding: 40px 0;
+            	a {
+            		font-size: 15px;
+            		margin: 40px 10px;
+
+            	}
+            }
+            .texto {
+            	.nombre{
+            		font-size: 70px;
+            	}
+            	h3 {
+            		font-size: 20px;
+            	}
+            }
+        }
+    }
+
+    .main {
+        .acerca-de {
+
+            .contenedor {
+                .foto{
+                    width: 100%;
+                }
+                article {
+                    width: 100%;
+                    top: 130px;
+                    padding: 20px;
+                    h3 {
+                        font-size: 25px;
+                    }
+                    p {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+
+        .menu {
+            padding-top: 400px;
+            
+            .contenedor {
+                width: 100%;
+                padding: 10px;
+                h3 {
+                    font-size: 30px;
+                }
+
+                .contenedor-menu {
+                    .contenedor-menu2 {
+                        display: block;
+
+                        .menu-de-comer {
+                            width: 100%;
+
+                            .platillo {
+                                width: 95%;
+                            }
+                        }
+                        .menu-de-tomar {
+                        	//margin-top: 100px;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .galeria {
+        	.foto {
+				width: 50%;
+        	}
+        }
+        .ubicacion {
+        	.contenedor {
+        		h3 {
+        			font-size: 35px;
+        		}
+        		.direccion {
+        			width: 100%;
+        			.calle, .telefono, .correo {
+        				font-size: 20px;
+        				text-align: center;
+        			}
+        		}
+        		.horarios {
+        			width: 100%;
+        			h4, p {
+        				font-size: 35px;
+        			}
+        		}
+        	}
+        }
+    }
+    footer {
+    	height: auto;
+    	.contenedor {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-center;
+            //align-items: flex-center;
+    		a {
+    			font-size: 50px;
+    			margin: 0 10px;
+    			width: 80px;
+    		}
+    	}
+    }
+}
